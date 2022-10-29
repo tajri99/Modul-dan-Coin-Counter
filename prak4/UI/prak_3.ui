@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>744</width>
+    <height>464</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>691</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="imgLabel">
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
+         </property>
+         <property name="lineWidth">
+          <number>3</number>
+         </property>
+         <property name="text">
+          <string>Input Image</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="loadButton">
+         <property name="text">
+          <string>Load Image</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QLabel" name="hasilLabel">
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
+         </property>
+         <property name="lineWidth">
+          <number>3</number>
+         </property>
+         <property name="text">
+          <string>Output Image</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="saveButton">
+         <property name="text">
+          <string>Save Result</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>744</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionLoad_Image"/>
+    <addaction name="actionSave_Image"/>
+   </widget>
+   <widget class="QMenu" name="menuOperasi_Geometri">
+    <property name="title">
+     <string>Operasi Geometri</string>
+    </property>
+    <widget class="QMenu" name="menurotasi_2">
+     <property name="title">
+      <string>rotasi</string>
+     </property>
+     <addaction name="action_46"/>
+     <addaction name="action45"/>
+     <addaction name="action90"/>
+     <addaction name="action_90"/>
+     <addaction name="action180"/>
+     <addaction name="actiontranspose"/>
+    </widget>
+    <widget class="QMenu" name="menuresize">
+     <property name="title">
+      <string>resize</string>
+     </property>
+     <widget class="QMenu" name="menuzoom_in">
+      <property name="title">
+       <string>zoom in</string>
+      </property>
+      <addaction name="action2x"/>
+      <addaction name="action3x"/>
+      <addaction name="action4x"/>
+     </widget>
+     <widget class="QMenu" name="menuzoom_out">
+      <property name="title">
+       <string>zoom out</string>
+      </property>
+      <addaction name="action1_2"/>
+      <addaction name="action1_4"/>
+      <addaction name="action3_4"/>
+     </widget>
+     <addaction name="menuzoom_in"/>
+     <addaction name="menuzoom_out"/>
+     <addaction name="actionskewed"/>
+    </widget>
+    <addaction name="actiontranslasi"/>
+    <addaction name="menurotasi_2"/>
+    <addaction name="menuresize"/>
+    <addaction name="actioncrop"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuOperasi_Geometri"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionLoad_Image">
+   <property name="text">
+    <string>Load Image</string>
+   </property>
+  </action>
+  <action name="actionSave_Image">
+   <property name="text">
+    <string>Save Image</string>
+   </property>
+  </action>
+  <action name="actionGrayscale">
+   <property name="text">
+    <string>Grayscale</string>
+   </property>
+  </action>
+  <action name="actionBrightness">
+   <property name="text">
+    <string>Brightness</string>
+   </property>
+  </action>
+  <action name="actionContrast">
+   <property name="text">
+    <string>Contrast</string>
+   </property>
+  </action>
+  <action name="actionContrast_Stretching">
+   <property name="text">
+    <string>Contrast Stretching</string>
+   </property>
+  </action>
+  <action name="actionNegative">
+   <property name="text">
+    <string>Negative</string>
+   </property>
+  </action>
+  <action name="actionBiner">
+   <property name="text">
+    <string>Biner</string>
+   </property>
+  </action>
+  <action name="actionGray_Histogram">
+   <property name="text">
+    <string>Gray Histogram</string>
+   </property>
+  </action>
+  <action name="actionRGB_Histogram">
+   <property name="text">
+    <string>RGB Histogram</string>
+   </property>
+  </action>
+  <action name="actionEqual_Histogram">
+   <property name="text">
+    <string>Equal Histogram</string>
+   </property>
+  </action>
+  <action name="actiontranslasi">
+   <property name="text">
+    <string>translasi</string>
+   </property>
+  </action>
+  <action name="action_45">
+   <property name="text">
+    <string>-45</string>
+   </property>
+  </action>
+  <action name="action_46">
+   <property name="text">
+    <string>-45</string>
+   </property>
+  </action>
+  <action name="action45">
+   <property name="text">
+    <string>45</string>
+   </property>
+  </action>
+  <action name="action90">
+   <property name="text">
+    <string>90</string>
+   </property>
+  </action>
+  <action name="action_90">
+   <property name="text">
+    <string>-90</string>
+   </property>
+  </action>
+  <action name="action180">
+   <property name="text">
+    <string>180</string>
+   </property>
+  </action>
+  <action name="actiontranspose">
+   <property name="text">
+    <string>transpose</string>
+   </property>
+  </action>
+  <action name="actionskewed">
+   <property name="text">
+    <string>skewed</string>
+   </property>
+  </action>
+  <action name="action2x">
+   <property name="text">
+    <string>2x</string>
+   </property>
+  </action>
+  <action name="action3x">
+   <property name="text">
+    <string>3x</string>
+   </property>
+  </action>
+  <action name="action4x">
+   <property name="text">
+    <string>4x</string>
+   </property>
+  </action>
+  <action name="action1_2">
+   <property name="text">
+    <string>1/2</string>
+   </property>
+  </action>
+  <action name="action1_4">
+   <property name="text">
+    <string>1/4</string>
+   </property>
+  </action>
+  <action name="action3_4">
+   <property name="text">
+    <string>3/4</string>
+   </property>
+  </action>
+  <action name="actioncrop">
+   <property name="text">
+    <string>crop</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
