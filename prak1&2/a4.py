@@ -15,7 +15,7 @@ class ShowImage(QMainWindow):
     def __init__(self):
         super().__init__()
 
-        loadUi('a4.ui', self)
+        loadUi('UI/a4.ui', self)
         self.image = None
         # button
         self.loadButton.clicked.connect(self.loadClicked)
