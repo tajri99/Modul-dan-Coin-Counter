@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>802</width>
+    <height>740</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>80</y>
+      <width>551</width>
+      <height>551</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="imgLabel">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Plain</enum>
+         </property>
+         <property name="lineWidth">
+          <number>1</number>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="margin">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="loadButton">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="text">
+          <string>Load Button</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>802</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuOperasi_spasial">
+    <property name="title">
+     <string>Operasi spasial</string>
+    </property>
+    <addaction name="actionfiltering"/>
+    <addaction name="actionmean"/>
+    <addaction name="actiongauss_smoothing"/>
+    <addaction name="actionsharpening_laplace"/>
+    <addaction name="actionMedian_Filter"/>
+    <addaction name="actionMax"/>
+    <addaction name="actionMin"/>
+   </widget>
+   <addaction name="menuOperasi_spasial"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionfiltering">
+   <property name="text">
+    <string>filtering</string>
+   </property>
+  </action>
+  <action name="actionmean">
+   <property name="text">
+    <string>mean</string>
+   </property>
+  </action>
+  <action name="actiongauss_smoothing">
+   <property name="text">
+    <string>gauss smoothing</string>
+   </property>
+  </action>
+  <action name="actionsharpening_laplace">
+   <property name="text">
+    <string>sharpening laplace</string>
+   </property>
+  </action>
+  <action name="actionMedian_Filter">
+   <property name="text">
+    <string>Median Filter</string>
+   </property>
+  </action>
+  <action name="actionMax">
+   <property name="text">
+    <string>Max</string>
+   </property>
+  </action>
+  <action name="actionMin">
+   <property name="text">
+    <string>Min</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
