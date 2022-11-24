@@ -13,4 +13,6 @@ setiap folder memiliki file induk main.py yang dapat dijalankan sesuai dengan ti
 license free
 
 ## author
-[tajri noor] (https://t.me/taj_irjat)
+<a href="https://twitter.com/TajriNoor" target="_blank">Twitter</a>
+<hr>
+<a href="https://t.me/taj_irjat" target="_blank">Telegram</a>
