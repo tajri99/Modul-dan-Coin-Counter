@@ -1,6 +1,5 @@
 import sys
 import cv2
-
 from PyQt5 import QtCore
 from PyQt5.QtCore import pyqtSlot
 from PyQt5.QtGui import QImage, QPixmap
