@@ -1,4 +1,4 @@
-# Praktikum Pengolahan Citra Digital using Pyhton and QT
+# Praktikum dan Tugas Besar Pengolahan Citra Digital using Pyhton 
 
 Program ini adalah tugas praktikum pengolahan citra digital berseri tiap pertemuan. Ditugaskan untuk membuat program dengan QT yang digunakan sebagai GUI platform dan python sebagai bahasa pemrogramannya.
 
